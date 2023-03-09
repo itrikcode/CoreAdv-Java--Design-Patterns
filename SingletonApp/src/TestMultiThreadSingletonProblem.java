@@ -10,7 +10,7 @@ public class TestMultiThreadSingletonProblem {
          * class.
          * 1. we can create object at the of class loding (eager instantation)
          * 2. we can use static factory method as snycronized method(but good solution)
-         * 2. we can take snycronized bloks inside static factory method
+         * 3. we can take snycronized bloks inside static factory method
          */
         MultithreadSingletonProblem problem = new MultithreadSingletonProblem();
         Thread t1 = new Thread(problem);
